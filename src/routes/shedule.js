@@ -16,7 +16,7 @@ shedule.use(cors());
 shedule.get('/shedule/:id', async function( request, response){
     try {
         const date = request.params.id;
-        const shedulewebsite = `https://aniwatchtv.to/ajax//schedule/list?tzOffset=-330&date=${date}`;
+        const shedulewebsite = `https://hianime.to/ajax//schedule/list?tzOffset=-330&date=${date}`;
 
         const responseshedule = await axios.get(shedulewebsite, {
             headers:{
