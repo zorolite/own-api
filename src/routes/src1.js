@@ -203,7 +203,7 @@ const megaCloudInstance = new MegaCloud();
 src1.get('/src-server/:id', async (req, res) => {
     try {
         const servernum = parseInt(req.params.id);
-        const serverlink = `https://aniwatchtv.to/ajax/v2/episode/sources?id=${servernum}`;
+        const serverlink = `https://hianime.to/ajax/v2/episode/sources?id=${servernum}`;
         const serreq = await axios.get(serverlink, {
             headers: {
                 'User-Agent': USER_AGENT,
